@@ -166,6 +166,7 @@ export default function SeoulMap({
   );
   const selectedArea = useMemo(() => visibleAreas.find((area) => area.id === selectedAreaId) ?? null, [selectedAreaId, visibleAreas]);
   const dimmerPaths = useMemo(() => [DIMMER_OUTER_PATH, ...features.flatMap(outerPaths)], [features]);
+  const hideDistrictLabels = Boolean(selectedAreaId);
 
   useEffect(() => {
     if (!map || !isLoaded || !features.length) return;
@@ -229,15 +230,17 @@ export default function SeoulMap({
                 onMouseOver={() => setHoveredDistrict(name)}
                 onMouseOut={() => setHoveredDistrict(null)}
               />
-              <OverlayViewF
-                position={labelPosition(feature)}
-                mapPaneName="floatPane"
-                getPixelPositionOffset={(width, height) => ({ x: -width / 2, y: -height / 2 })}
-              >
-                <span className={`district-map-label${selected ? " selected" : ""}${hovered ? " hovered" : ""}`}>
-                  {name}
-                </span>
-              </OverlayViewF>
+              {!hideDistrictLabels ? (
+                <OverlayViewF
+                  position={labelPosition(feature)}
+                  mapPaneName="floatPane"
+                  getPixelPositionOffset={(width, height) => ({ x: -width / 2, y: -height / 2 })}
+                >
+                  <span className={`district-map-label${selected ? " selected" : ""}${hovered ? " hovered" : ""}`}>
+                    {name}
+                  </span>
+                </OverlayViewF>
+              ) : null}
             </div>
           );
         })}

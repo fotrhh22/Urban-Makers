@@ -187,6 +187,14 @@ export default function Dashboard({
     setSelectedDongNames(areaDongs(area));
   };
 
+  const showAreaDetail = (area: UrbanArea) => {
+    const nextDistricts = areaDistricts(area);
+    if (districtName === "서울 전체" || !nextDistricts.includes(districtName)) setDistrictName(nextDistricts[0]);
+    setSelectedArea(area);
+    setSelectedDongNames(areaDongs(area));
+    setOverviewArea(area);
+  };
+
   const changeDistrict = (name: string) => {
     setDistrictName(name);
     setSelectedArea(null);
@@ -271,7 +279,7 @@ export default function Dashboard({
                           type="button"
                           onClick={(event) => {
                             event.stopPropagation();
-                            setOverviewArea(area);
+                            showAreaDetail(area);
                           }}
                         >
                           상세보기
