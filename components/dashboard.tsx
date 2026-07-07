@@ -19,13 +19,14 @@ import {
   X,
 } from "lucide-react";
 import type { DistrictDashboard, IndicatorValue, UrbanArea } from "@/lib/types";
-import { calculateIndicator, formatOriginalValue } from "@/lib/indicators";
+import { formatOriginalValue } from "@/lib/indicators";
 
 const SeoulMap = dynamic(() => import("./SeoulMap"), { ssr: false, loading: () => <div className="map-canvas map-loading">지도 로딩 중…</div> });
 
 type Meta = { id: string; label: string; description: string; category: string };
 type Source = { id: string; name: string; url: string; updatedAt: string };
 type Coverage = { generatedAt: string; districtCount: number; indicators: { indicatorCode: string; dataStatus: string }[] };
+type IndicatorGroup = { category: string; items: { item: IndicatorValue; meta?: Meta }[] };
 
 const ICONS: Record<string, typeof Users> = {
   floating_population_change: Sparkles,
@@ -38,14 +39,35 @@ const ICONS: Record<string, typeof Users> = {
   illegal_parking: MapPin,
 };
 
-const FEATURED_IDS = [
-  "floating_population_change",
-  "building_permit_change",
-  "crime_change",
-  "vacant_house_change",
-  "complaints",
-  "illegal_parking",
-];
+const CATEGORY_ORDER = ["종합성과지표", "체감 보조지표"];
+
+function displayCategory(category?: string): string {
+  if (category === "체감 보완지표") return "체감 보조지표";
+  return category ?? "기타 지표";
+}
+
+function buildIndicatorGroups(indicators: IndicatorValue[], indicatorMeta: Meta[]): IndicatorGroup[] {
+  const indicatorMap = new Map(indicators.map((item) => [item.id, item]));
+  const grouped = new Map<string, { item: IndicatorValue; meta?: Meta }[]>();
+  for (const meta of indicatorMeta) {
+    const item = indicatorMap.get(meta.id);
+    if (!item) continue;
+    const category = displayCategory(meta.category);
+    grouped.set(category, [...(grouped.get(category) ?? []), { item, meta }]);
+  }
+  for (const item of indicators) {
+    if (indicatorMeta.some((meta) => meta.id === item.id)) continue;
+    const category = "기타 지표";
+    grouped.set(category, [...(grouped.get(category) ?? []), { item }]);
+  }
+  return [...grouped.entries()]
+    .map(([category, items]) => ({ category, items }))
+    .toSorted((a, b) => {
+      const orderA = CATEGORY_ORDER.indexOf(a.category);
+      const orderB = CATEGORY_ORDER.indexOf(b.category);
+      return (orderA === -1 ? 99 : orderA) - (orderB === -1 ? 99 : orderB);
+    });
+}
 
 function MiniChart({ series = [], tone }: Pick<IndicatorValue, "series" | "tone">) {
   if (series.length < 2) return <div className="sparkline empty" />;
@@ -140,6 +162,21 @@ function IndicatorCard({ item }: { item: IndicatorValue }) {
   );
 }
 
+function MethodCard({ item, meta }: { item: IndicatorValue; meta?: Meta }) {
+  return (
+    <article>
+      <span>{displayCategory(meta?.category)}</span>
+      <h2>{item.label}</h2>
+      <p>{meta?.description ?? "자료준비필요"}</p>
+      <dl className="method-values">
+        <div><dt>표시값</dt><dd>{item.available ? item.formatted : item.dataStatus === "recent_only" && item.compareValue !== null ? formatOriginalValue(item.compareValue, item.unit) : "자료준비필요"}</dd></div>
+        <div><dt>원자료</dt><dd>{formatOriginalValue(item.compareValue, item.unit)}</dd></div>
+        <div><dt>비교 기준</dt><dd>{item.comparison}</dd></div>
+      </dl>
+    </article>
+  );
+}
+
 export default function Dashboard({
   districts,
   areas,
@@ -165,7 +202,7 @@ export default function Dashboard({
   );
   const visibleAreas = useMemo(() => areas.filter((area) => districtName === "서울 전체" || areaDistricts(area).includes(districtName)), [areas, districtName]);
   const dongOptions = useMemo(() => [...new Set(visibleAreas.flatMap(areaDongs))].toSorted((a, b) => a.localeCompare(b, "ko-KR")), [visibleAreas]);
-  const cards = FEATURED_IDS.map((id) => district.indicators.find((item) => item.id === id)).filter(Boolean).map((item) => calculateIndicator(item as IndicatorValue, null, null));
+  const indicatorGroups = useMemo(() => buildIndicatorGroups(district.indicators, indicatorMeta), [district.indicators, indicatorMeta]);
   const selectedLabel = selectedArea ? `${selectedArea.name} (${areaDongs(selectedArea).join(", ")})` : selectedDongNames.length ? selectedDongNames.join(", ") : null;
 
   const toggleDong = (dong: string) => {
@@ -322,14 +359,18 @@ export default function Dashboard({
               <p>선택한 구·법정동 기준의 지표 준비 상태입니다.</p>
             </div>
             {selectedLabel ? (
-              <div className="metric-grid">
-                {cards.map((item) => <IndicatorCard item={item} key={item.id} />)}
-                <article className="indicator-card deferred">
-                  <div className="card-topline"><span className="metric-icon"><Database size={18} /></span><span className="pending-badge">2차 구축</span></div>
-                  <p className="metric-label">신규창업 / 폐업</p>
-                  <strong className="deferred-title">자료준비필요</strong>
-                  <p className="deferred-copy">기존 데이터는 초기화되었으며<br />신규 원자료 구축 후 반영 예정</p>
-                </article>
+              <div className="indicator-groups">
+                {indicatorGroups.map((group) => (
+                  <section className="indicator-group" key={group.category} id={`dashboard-${group.category}`}>
+                    <div className="group-heading">
+                      <h3>{group.category}</h3>
+                      <span>{group.items.length}개 지표</span>
+                    </div>
+                    <div className="metric-grid">
+                      {group.items.map(({ item }) => <IndicatorCard item={item} key={item.id} />)}
+                    </div>
+                  </section>
+                ))}
               </div>
             ) : (
               <div className="indicator-empty">도시재생활성화지역 목록을 선택하면 지표 영역이 표시됩니다.</div>
@@ -345,10 +386,21 @@ export default function Dashboard({
         <section className="method-page section-wrap" id="top">
           <span className="section-kicker">INDICATOR GUIDE</span>
           <h1>지표 산정 기준</h1>
-          <p>각 지표의 의미와 해석 기준을 확인하세요.</p>
-          <div className="method-grid">
-            {indicatorMeta.map((meta) => (
-              <article key={meta.id}><span>{meta.category}</span><h2>{meta.label}</h2><p>{meta.description}</p></article>
+          <p>{districtName} 기준의 대시보드 표시값과 같은 값으로 지표 설명을 확인하세요.</p>
+          <div className="category-menu" aria-label="지표 분류">
+            {indicatorGroups.map((group) => <a key={group.category} href={`#method-${group.category}`}>{group.category}</a>)}
+          </div>
+          <div className="method-groups">
+            {indicatorGroups.map((group) => (
+              <section className="method-group" key={group.category} id={`method-${group.category}`}>
+                <div className="group-heading">
+                  <h2>{group.category}</h2>
+                  <span>{group.items.length}개 지표</span>
+                </div>
+                <div className="method-grid">
+                  {group.items.map(({ item, meta }) => <MethodCard item={item} meta={meta} key={item.id} />)}
+                </div>
+              </section>
             ))}
           </div>
         </section>

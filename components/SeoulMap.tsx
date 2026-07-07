@@ -20,6 +20,13 @@ type LatLng = google.maps.LatLngLiteral;
 const MAP_LIBRARIES: Parameters<typeof useJsApiLoader>[0]["libraries"] = [];
 const SEOUL_CENTER = { lat: 37.5665, lng: 126.978 };
 const FIT_PADDING = 56;
+const MAP_MIN_ZOOM = 10;
+const DIMMER_BOUNDS = {
+  north: 37.9,
+  south: 37.25,
+  east: 127.55,
+  west: 126.45,
+};
 
 const MAP_OPTIONS: google.maps.MapOptions = {
   disableDefaultUI: false,
@@ -28,6 +35,11 @@ const MAP_OPTIONS: google.maps.MapOptions = {
   fullscreenControl: true,
   clickableIcons: false,
   gestureHandling: "greedy",
+  minZoom: MAP_MIN_ZOOM,
+  restriction: {
+    latLngBounds: DIMMER_BOUNDS,
+    strictBounds: true,
+  },
   zoomControl: true,
   styles: [
     { featureType: "poi.business", stylers: [{ visibility: "off" }] },
