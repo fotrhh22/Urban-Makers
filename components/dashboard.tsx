@@ -357,7 +357,7 @@ export default function Dashboard({
       <footer id="sources">
         <div><b>서울시 도시재생 체감지도</b><p>도시재생활성화지역 선택과 의견 수렴</p></div>
         <div className="source-list">{sourceMeta.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer">{source.name}</a>)}</div>
-        <small>coverage 생성: {coverage.generatedAt} · 자치구 {coverage.districtCount}개</small>
+        <small>자치구 {coverage.districtCount}개</small>
       </footer>
     </main>
   );
