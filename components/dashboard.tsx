@@ -290,7 +290,7 @@ export default function Dashboard({
                 </ul>
                 {selectedArea ? (
                   <button className="survey-button" type="button" onClick={() => alert("준비중입니다")}>
-                    설문조사하러가기
+                    설문조사 시작하기
                   </button>
                 ) : null}
               </aside>
