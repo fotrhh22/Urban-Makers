@@ -1,0 +1,122 @@
+{
+  "population_change": {
+    "enabled": true,
+    "sourceType": "seoulDataHub",
+    "sourceName": "주민등록인구(연도별)",
+    "vslzId": 3,
+    "range": "SGG",
+    "spatialLevel": "gu",
+    "startYear": 2015,
+    "endYear": 2025,
+    "unit": "명",
+    "status": "available",
+    "implementationStatus": "completed",
+    "outputRule": "이미 완료된 production series를 사용한다. 재수집하지 않는다."
+  },
+  "floating_population_change": {
+    "enabled": true,
+    "sourceType": "seoulOpenData",
+    "sourceName": "행정동 단위 서울 생활인구",
+    "infId": "OA-14991",
+    "spatialLevel": "dong",
+    "aggregationLevel": "gu",
+    "unit": "명",
+    "status": "recent_only",
+    "outputRule": "최근값 또는 최근 평균값만 저장한다. changeRate는 null. 장기 변화율 계산 금지."
+  },
+  "complaints": {
+    "enabled": true,
+    "sourceType": "seoulOpenData",
+    "sourceName": "서울시 스마트 불편신고 분야별 신고 현황",
+    "serviceName": "SmartUncomfStatSector",
+    "requestUrlTemplate": "http://openapi.seoul.go.kr:8088/{SEOUL_OPEN_API_KEY}/json/SmartUncomfStatSector/{START_INDEX}/{END_INDEX}/",
+    "spatialLevel": "city_or_gu_if_field_exists",
+    "unit": "건",
+    "status": "configured",
+    "outputRule": "응답에 자치구 필드가 있으면 구별 연도 집계. 없으면 서울 전체 보완지표로만 저장."
+  },
+  "illegal_parking": {
+    "enabled": true,
+    "sourceType": "seoulOpenDataFile",
+    "sourceName": "서울시 불법주정차 단속 정보",
+    "infId": "OA-22190",
+    "dataFormat": "file",
+    "fields": ["단속일시", "단속주소", "위도", "경도"],
+    "spatialLevel": "point_to_gu",
+    "unit": "건",
+    "status": "needs_file_download",
+    "rawDir": "data/raw/illegal_parking",
+    "outputRule": "API 호출 금지. rawDir의 CSV/XLSX만 처리한다."
+  },
+  "crime_change": {
+    "enabled": true,
+    "sourceType": "seoulStat",
+    "sourceName": "서울시 5대 범죄 발생현황 통계",
+    "infId": "OA-759",
+    "dataFormat": "stat_sheet_or_file",
+    "spatialLevel": "gu_or_police_station_proxy",
+    "unit": "건",
+    "status": "needs_stat_download",
+    "rawDir": "data/raw/crime",
+    "outputRule": "API 호출 금지. rawDir의 CSV/XLSX만 처리한다. 5대 범죄 발생 건수 합계를 원자료 count로 저장한다."
+  },
+  "vacant_house_change": {
+    "enabled": true,
+    "sourceType": "seoulStat",
+    "sourceName": "서울시 미거주 주택(빈집) 현황(구별) 통계",
+    "infId": "OA-13825",
+    "legacyInfId": "11005",
+    "dataFormat": "stat_sheet_or_file",
+    "spatialLevel": "gu",
+    "unit": "호",
+    "status": "needs_stat_download",
+    "rawDir": "data/raw/vacant_house",
+    "outputRule": "API 호출 금지. rawDir의 CSV/XLSX만 처리한다. 연도별 자치구 빈집 수를 원자료 count로 저장한다."
+  },
+  "building_permit_change": {
+    "enabled": true,
+    "sourceType": "dataGoKrBuildingHub",
+    "sourceName": "국토교통부_건축HUB_건축인허가정보 서비스",
+    "dataGoKrId": "15136267",
+    "serviceType": "건축인허가 기본개요 조회",
+    "dateField": "archPmsDay",
+    "requiredFields": ["sigunguCd", "bjdongCd", "archPmsDay", "crtnDay", "platPlc", "mainPurpsCdNm"],
+    "spatialLevel": "gu",
+    "unit": "건",
+    "status": "configured",
+    "outputRule": "archPmsDay 기준 연도별 건축허가 count를 자치구별 집계한다. 기존 성공 endpoint가 있으면 그것만 사용한다. 새 검색 금지."
+  },
+  "housing_permit_change": {
+    "enabled": true,
+    "sourceType": "dataGoKrBuildingHub",
+    "sourceName": "국토교통부_건축HUB_건축인허가정보 서비스",
+    "dataGoKrId": "15136267",
+    "serviceType": "건축인허가 주택유형 조회",
+    "requiredFields": ["sigunguCd", "bjdongCd", "hstpGbCd", "hstpGbCdNm", "silHoHhldCnt", "silHoHhldArea"],
+    "spatialLevel": "gu",
+    "unit": "건",
+    "status": "configured",
+    "outputRule": "주택유형 필드가 명확할 때만 주택 인허가 series 생성. 불명확하면 needs_check. 새 검색 금지."
+  },
+  "employee_change": {
+    "enabled": true,
+    "sourceType": "kosis",
+    "sourceName": "서울특별시 산업·사업체구분별 사업체수, 종사자수",
+    "orgId": "101",
+    "tblId": "INH_1K52B01_11",
+    "prdSe": "Y",
+    "spatialLevel": "gu",
+    "unit": "명",
+    "status": "needs_kosis_dimension_check",
+    "outputRule": "KOSIS 통계표설명 API로 objL1, itmId 후보만 출력한다. 웹 검색 금지. 실제 통계자료 호출 금지."
+  },
+  "urban_regen_standard": {
+    "enabled": true,
+    "sourceType": "dataGoKrUrbanRegenStandard",
+    "sourceName": "전국도시재생사업정보표준데이터",
+    "dataGoKrId": "15139235",
+    "role": "S-map seed 보조 매칭용",
+    "status": "configured",
+    "outputRule": "서울 자료만 필터링. 서울 자료 0건이어도 오류 처리하지 않는다. 새 검색 금지."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "indicatorCode": "building_permit_change",
+  "sourceName": "자료준비필요",
+  "sourceUrl": null,
+  "spatialLevel": "gu",
+  "generatedAt": "2026-07-07T06:36:47.106Z",
+  "availableYears": [],
+  "series": [],
+  "dataStatus": "data_preparation_required",
+  "missingReason": "자료준비필요"
+}

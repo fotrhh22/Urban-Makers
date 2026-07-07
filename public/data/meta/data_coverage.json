@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-07-07T06:36:47.106Z",
+  "districtCount": 25,
+  "indicators": [
+    {
+      "indicatorCode": "population_change",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "floating_population_change",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "building_permit_change",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "housing_permit_change",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "employee_change",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "crime_change",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "vacant_house_change",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "complaints",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    },
+    {
+      "indicatorCode": "illegal_parking",
+      "sourceName": "자료준비필요",
+      "availableYears": [],
+      "availableDistrictCount": 0,
+      "missingDistrictCount": 25,
+      "dataStatus": "data_preparation_required",
+      "missingReason": "자료준비필요"
+    }
+  ]
+}

@@ -1,0 +1,1151 @@
+[
+  {
+    "id": "area-001-창신숭인",
+    "name": "창신숭인",
+    "district": "종로구",
+    "districts": [
+      "종로구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 종로구 창신숭인",
+    "latitude": 37.5615,
+    "longitude": 126.9668,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2014,
+      "notificationYear": 2015,
+      "notificationDate": "2015-02-26",
+      "startYear": 2015,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-002-창동상계",
+    "name": "창동상계",
+    "district": "도봉구",
+    "districts": [
+      "도봉구",
+      "노원구"
+    ],
+    "type": "경제기반형",
+    "status": "자료준비필요",
+    "address": "서울특별시 도봉구 / 노원구 창동상계",
+    "latitude": 37.6608,
+    "longitude": 127.0391,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2015,
+      "notificationYear": 2017,
+      "notificationDate": "2017-03-02",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-003-가리봉",
+    "name": "가리봉",
+    "district": "구로구",
+    "districts": [
+      "구로구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 구로구 가리봉",
+    "latitude": 37.4915,
+    "longitude": 126.8836,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2015,
+      "notificationYear": 2017,
+      "notificationDate": "2017-05-11",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-004-해방촌",
+    "name": "해방촌",
+    "district": "용산구",
+    "districts": [
+      "용산구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 용산구 해방촌",
+    "latitude": 37.5326,
+    "longitude": 126.9905,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2015,
+      "notificationYear": 2017,
+      "notificationDate": "2017-05-11",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-005-독산동_우시장",
+    "name": "독산동 우시장",
+    "district": "금천구",
+    "districts": [
+      "금천구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 금천구 독산동 우시장",
+    "latitude": 37.4609,
+    "longitude": 126.8995,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-08-01",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-006-안암동_캠퍼스타운",
+    "name": "안암동 캠퍼스타운",
+    "district": "성북구",
+    "districts": [
+      "성북구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성북구 안암동 캠퍼스타운",
+    "latitude": 37.5974,
+    "longitude": 127.0247,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2017,
+      "notificationYear": 2020,
+      "notificationDate": "2020-12-24",
+      "startYear": 2020,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-007-수유1동",
+    "name": "수유1동",
+    "district": "강북구",
+    "districts": [
+      "강북구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강북구 수유1동",
+    "latitude": 37.6516,
+    "longitude": 127.0377,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-01-15",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-008-불광2동",
+    "name": "불광2동",
+    "district": "은평구",
+    "districts": [
+      "은평구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 은평구 불광2동",
+    "latitude": 37.6076,
+    "longitude": 126.9087,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-11-14",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-009-묵2동",
+    "name": "묵2동",
+    "district": "중랑구",
+    "districts": [
+      "중랑구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 중랑구 묵2동",
+    "latitude": 37.6003,
+    "longitude": 127.0825,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-11-28",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-010-천연_충현동",
+    "name": "천연·충현동",
+    "district": "서대문구",
+    "districts": [
+      "서대문구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 서대문구 천연·충현동",
+    "latitude": 37.5771,
+    "longitude": 126.9308,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-11-20",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-011-난곡_난향동",
+    "name": "난곡·난향동",
+    "district": "관악구",
+    "districts": [
+      "관악구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 관악구 난곡·난향동",
+    "latitude": 37.4804,
+    "longitude": 126.9496,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-11-21",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-012-도봉2동",
+    "name": "도봉2동",
+    "district": "도봉구",
+    "districts": [
+      "도봉구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 도봉구 도봉2동",
+    "latitude": 37.6748,
+    "longitude": 127.0491,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2018,
+      "notificationYear": 2021,
+      "notificationDate": "2021-04-22",
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-013-사당4동",
+    "name": "사당4동",
+    "district": "동작구",
+    "districts": [
+      "동작구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 동작구 사당4동",
+    "latitude": 37.5224,
+    "longitude": 126.9453,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2018,
+      "notificationYear": 2020,
+      "notificationDate": "2020-06-11",
+      "startYear": 2020,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-014-홍릉일대",
+    "name": "홍릉일대",
+    "district": "동대문구",
+    "districts": [
+      "동대문구",
+      "성북구"
+    ],
+    "type": "경제기반형",
+    "status": "자료준비필요",
+    "address": "서울특별시 동대문구 / 성북구 홍릉일대",
+    "latitude": 37.5884,
+    "longitude": 127.0496,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2019,
+      "notificationYear": 2020,
+      "notificationDate": "2020-03-26",
+      "startYear": 2020,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-015-목3동",
+    "name": "목3동",
+    "district": "양천구",
+    "districts": [
+      "양천구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 양천구 목3동",
+    "latitude": 37.5089,
+    "longitude": 126.8504,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2019,
+      "notificationYear": 2020,
+      "notificationDate": "2020-01-30",
+      "startYear": 2020,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-016-신월3동",
+    "name": "신월3동",
+    "district": "양천구",
+    "districts": [
+      "양천구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 양천구 신월3동",
+    "latitude": 37.5129,
+    "longitude": 126.8544,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2019,
+      "notificationYear": 2021,
+      "notificationDate": "2021-05-18",
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-017-중화2동",
+    "name": "중화2동",
+    "district": "중랑구",
+    "districts": [
+      "중랑구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 중랑구 중화2동",
+    "latitude": 37.6063,
+    "longitude": 127.0845,
+    "auxiliary": {
+      "supportType": "국가지원",
+      "selectionYear": 2019,
+      "notificationYear": 2021,
+      "notificationDate": "2021-12-30",
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-018-성수동",
+    "name": "성수동",
+    "district": "성동구",
+    "districts": [
+      "성동구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성동구 성수동",
+    "latitude": 37.5673,
+    "longitude": 127.0329,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2014,
+      "notificationYear": 2017,
+      "notificationDate": "2017-06-01",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-019-신촌동",
+    "name": "신촌동",
+    "district": "서대문구",
+    "districts": [
+      "서대문구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 서대문구 신촌동",
+    "latitude": 37.5871,
+    "longitude": 126.9368,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2014,
+      "notificationYear": 2016,
+      "notificationDate": "2016-12-29",
+      "startYear": 2016,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-020-암사동",
+    "name": "암사동",
+    "district": "강동구",
+    "districts": [
+      "강동구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강동구 암사동",
+    "latitude": 37.5421,
+    "longitude": 127.1278,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2014,
+      "notificationYear": 2017,
+      "notificationDate": "2017-06-08",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-021-장위동",
+    "name": "장위동",
+    "district": "성북구",
+    "districts": [
+      "성북구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성북구 장위동",
+    "latitude": 37.6054,
+    "longitude": 127.0247,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2014,
+      "notificationYear": 2017,
+      "notificationDate": "2017-09-14",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-022-상도4동",
+    "name": "상도4동",
+    "district": "동작구",
+    "districts": [
+      "동작구"
+    ],
+    "type": "근린재생형",
+    "status": "자료준비필요",
+    "address": "서울특별시 동작구 상도4동",
+    "latitude": 37.5004,
+    "longitude": 126.9273,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2014,
+      "notificationYear": 2017,
+      "notificationDate": "2017-08-17",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-023-서울역_일대",
+    "name": "서울역 일대",
+    "district": "중구",
+    "districts": [
+      "중구",
+      "용산구"
+    ],
+    "type": "경제기반형",
+    "status": "자료준비필요",
+    "address": "서울특별시 중구 / 용산구 서울역 일대",
+    "latitude": 37.5556,
+    "longitude": 126.9896,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2015,
+      "notificationYear": 2017,
+      "notificationDate": "2017-12-28",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-024-세운상가_일대",
+    "name": "세운상가 일대",
+    "district": "종로구",
+    "districts": [
+      "종로구",
+      "중구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 종로구 / 중구 세운상가 일대",
+    "latitude": 37.5695,
+    "longitude": 126.9748,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2015,
+      "notificationYear": 2017,
+      "notificationDate": "2017-06-01",
+      "startYear": 2017,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-025-창덕궁앞_도성한복판",
+    "name": "창덕궁앞 도성한복판",
+    "district": "종로구",
+    "districts": [
+      "종로구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 종로구 창덕궁앞 도성한복판",
+    "latitude": 37.5735,
+    "longitude": 126.9788,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2015,
+      "notificationYear": 2018,
+      "notificationDate": "2018-05-10",
+      "startYear": 2018,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-026-장안평_일대",
+    "name": "장안평 일대",
+    "district": "성동구",
+    "districts": [
+      "성동구",
+      "동대문구"
+    ],
+    "type": "경제기반형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성동구 / 동대문구 장안평 일대",
+    "latitude": 37.5673,
+    "longitude": 127.0409,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2015,
+      "notificationYear": 2016,
+      "notificationDate": "2016-08-04",
+      "startYear": 2016,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-027-영등포경인로",
+    "name": "영등포경인로",
+    "district": "영등포구",
+    "districts": [
+      "영등포구"
+    ],
+    "type": "경제기반형",
+    "status": "자료준비필요",
+    "address": "서울특별시 영등포구 영등포경인로",
+    "latitude": 37.5344,
+    "longitude": 126.9042,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2017,
+      "notificationYear": 2020,
+      "notificationDate": "2020-04-16",
+      "startYear": 2020,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-028-용산전자상가",
+    "name": "용산전자상가",
+    "district": "용산구",
+    "districts": [
+      "용산구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 용산구 용산전자상가",
+    "latitude": 37.5446,
+    "longitude": 127.0025,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-09-05",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-029-마장동",
+    "name": "마장동",
+    "district": "성동구",
+    "districts": [
+      "성동구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성동구 마장동",
+    "latitude": 37.5533,
+    "longitude": 127.0229,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-09-11",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-030-4_19사거리",
+    "name": "4.19사거리",
+    "district": "강북구",
+    "districts": [
+      "강북구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강북구 4.19사거리",
+    "latitude": 37.6336,
+    "longitude": 127.0157,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2017,
+      "notificationYear": 2019,
+      "notificationDate": "2019-06-20",
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-031-정동",
+    "name": "정동",
+    "district": "중구",
+    "districts": [
+      "중구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 중구 정동",
+    "latitude": 37.5616,
+    "longitude": 126.9916,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2017,
+      "notificationYear": 2020,
+      "notificationDate": "2020-05-28",
+      "startYear": 2020,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-032-청량리_제기동",
+    "name": "청량리·제기동",
+    "district": "동대문구",
+    "districts": [
+      "동대문구"
+    ],
+    "type": "중심시가지형",
+    "status": "계획취소",
+    "address": "서울특별시 동대문구 청량리·제기동",
+    "latitude": 37.5764,
+    "longitude": 127.0376,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2017,
+      "notificationYear": 2020,
+      "notificationDate": "2020-01-09",
+      "startYear": 2020,
+      "cancelled": true,
+      "cancelledDate": "2022-12-29"
+    }
+  },
+  {
+    "id": "area-033-창3동",
+    "name": "창3동",
+    "district": "도봉구",
+    "districts": [
+      "도봉구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 도봉구 창3동",
+    "latitude": 37.6748,
+    "longitude": 127.0491,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2017,
+      "notificationYear": 2020,
+      "notificationDate": "2020-01-30",
+      "startYear": 2020,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-034-송정동",
+    "name": "송정동",
+    "district": "성동구",
+    "districts": [
+      "성동구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성동구 송정동",
+    "latitude": 37.5733,
+    "longitude": 127.0429,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2018,
+      "notificationYear": 2021,
+      "notificationDate": "2021-02-25",
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-035-인수동",
+    "name": "인수동",
+    "district": "강북구",
+    "districts": [
+      "강북구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강북구 인수동",
+    "latitude": 37.6536,
+    "longitude": 127.0357,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2018,
+      "notificationYear": 2021,
+      "notificationDate": "2021-04-30",
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-036-성내2동",
+    "name": "성내2동",
+    "district": "강동구",
+    "districts": [
+      "강동구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강동구 성내2동",
+    "latitude": 37.5221,
+    "longitude": 127.1078,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2018,
+      "notificationYear": 2021,
+      "notificationDate": "2021-03-24",
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-037-구의역",
+    "name": "구의역",
+    "district": "광진구",
+    "districts": [
+      "광진구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 광진구 구의역",
+    "latitude": 37.5345,
+    "longitude": 127.0703,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2022,
+      "notificationDate": "2022-06-02",
+      "startYear": 2022,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-038-풍납동",
+    "name": "풍납동",
+    "district": "송파구",
+    "districts": [
+      "송파구"
+    ],
+    "type": "역사문화형/근린",
+    "status": "자료준비필요",
+    "address": "서울특별시 송파구 풍납동",
+    "latitude": 37.5145,
+    "longitude": 127.0979,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2022,
+      "notificationDate": "2022-06-30",
+      "startYear": 2022,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-039-북촌가회동",
+    "name": "북촌가회동",
+    "district": "종로구",
+    "districts": [
+      "종로구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 종로구 북촌가회동",
+    "latitude": 37.5775,
+    "longitude": 126.9748,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2023,
+      "notificationDate": "2023-12-28",
+      "startYear": 2023,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-040-홍제역",
+    "name": "홍제역",
+    "district": "서대문구",
+    "districts": [
+      "서대문구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 서대문구 홍제역",
+    "latitude": 37.5871,
+    "longitude": 126.9368,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2019,
+      "notificationDate": null,
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-041-효창공원",
+    "name": "효창공원",
+    "district": "용산구",
+    "districts": [
+      "용산구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 용산구 효창공원",
+    "latitude": 37.5446,
+    "longitude": 126.9945,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2019,
+      "notificationDate": null,
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-042-면목패션",
+    "name": "면목패션",
+    "district": "중랑구",
+    "districts": [
+      "중랑구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 중랑구 면목패션",
+    "latitude": 37.6223,
+    "longitude": 127.1005,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2019,
+      "notificationDate": null,
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-043-경복궁_서측",
+    "name": "경복궁 서측",
+    "district": "종로구",
+    "districts": [
+      "종로구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 종로구 경복궁 서측",
+    "latitude": 37.5615,
+    "longitude": 126.9668,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2023,
+      "notificationDate": "2023-01-05",
+      "startYear": 2023,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-044-공항동",
+    "name": "공항동",
+    "district": "강서구",
+    "districts": [
+      "강서구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강서구 공항동",
+    "latitude": 37.5429,
+    "longitude": 126.8415,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2023,
+      "notificationDate": "2023-07-19",
+      "startYear": 2023,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-045-응암3동",
+    "name": "응암3동",
+    "district": "은평구",
+    "districts": [
+      "은평구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 은평구 응암3동",
+    "latitude": 37.6136,
+    "longitude": 126.9187,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2024,
+      "notificationDate": "2024-12-19",
+      "startYear": 2024,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-046-사근동",
+    "name": "사근동",
+    "district": "성동구",
+    "districts": [
+      "성동구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성동구 사근동",
+    "latitude": 37.5633,
+    "longitude": 127.0369,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2019,
+      "notificationYear": 2019,
+      "notificationDate": null,
+      "startYear": 2019,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-047-망우본동",
+    "name": "망우본동",
+    "district": "중랑구",
+    "districts": [
+      "중랑구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 중랑구 망우본동",
+    "latitude": 37.6103,
+    "longitude": 127.0965,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2020,
+      "notificationYear": 2023,
+      "notificationDate": "2023-12-21",
+      "startYear": 2023,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-048-신월1동",
+    "name": "신월1동",
+    "district": "양천구",
+    "districts": [
+      "양천구"
+    ],
+    "type": "일반근린형",
+    "status": "자료준비필요",
+    "address": "서울특별시 양천구 신월1동",
+    "latitude": 37.5249,
+    "longitude": 126.8744,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2020,
+      "notificationYear": 2025,
+      "notificationDate": "2025-03-27",
+      "startYear": 2025,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-049-용답상가시장",
+    "name": "용답상가시장",
+    "district": "성동구",
+    "districts": [
+      "성동구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 성동구 용답상가시장",
+    "latitude": 37.5753,
+    "longitude": 127.0489,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2021,
+      "notificationYear": 2021,
+      "notificationDate": null,
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-050-화곡중앙시장",
+    "name": "화곡중앙시장",
+    "district": "강서구",
+    "districts": [
+      "강서구"
+    ],
+    "type": "중심시가지형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강서구 화곡중앙시장",
+    "latitude": 37.5409,
+    "longitude": 126.8355,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2021,
+      "notificationYear": 2021,
+      "notificationDate": null,
+      "startYear": 2021,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-051-김포공항_일대",
+    "name": "김포공항 일대",
+    "district": "강서구",
+    "districts": [
+      "강서구"
+    ],
+    "type": "경제기반형",
+    "status": "자료준비필요",
+    "address": "서울특별시 강서구 김포공항 일대",
+    "latitude": 37.5449,
+    "longitude": 126.8395,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2024,
+      "notificationYear": 2025,
+      "notificationDate": "2025-01-31",
+      "startYear": 2025,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  },
+  {
+    "id": "area-052-남산_일대",
+    "name": "남산 일대",
+    "district": "중구",
+    "districts": [
+      "중구"
+    ],
+    "type": "시가지형/기타",
+    "status": "자료준비필요",
+    "address": "서울특별시 중구 남산 일대",
+    "latitude": 37.5616,
+    "longitude": 126.9916,
+    "auxiliary": {
+      "supportType": "서울시 자체",
+      "selectionYear": 2024,
+      "notificationYear": 2024,
+      "notificationDate": null,
+      "startYear": 2024,
+      "cancelled": false,
+      "cancelledDate": null
+    }
+  }
+]

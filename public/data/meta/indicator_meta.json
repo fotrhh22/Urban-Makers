@@ -1,0 +1,56 @@
+[
+  {
+    "id": "population_change",
+    "label": "인구증감률",
+    "description": "자료준비필요",
+    "category": "종합성과지표"
+  },
+  {
+    "id": "floating_population_change",
+    "label": "유동인구 변화",
+    "description": "자료준비필요",
+    "category": "종합성과지표"
+  },
+  {
+    "id": "building_permit_change",
+    "label": "건축허가 증감률",
+    "description": "자료준비필요",
+    "category": "종합성과지표"
+  },
+  {
+    "id": "housing_permit_change",
+    "label": "주택 인허가율",
+    "description": "자료준비필요",
+    "category": "종합성과지표"
+  },
+  {
+    "id": "employee_change",
+    "label": "종사자 증감률",
+    "description": "자료준비필요",
+    "category": "종합성과지표"
+  },
+  {
+    "id": "crime_change",
+    "label": "범죄 발생 변화",
+    "description": "자료준비필요",
+    "category": "종합성과지표"
+  },
+  {
+    "id": "vacant_house_change",
+    "label": "빈집 변화",
+    "description": "자료준비필요",
+    "category": "종합성과지표"
+  },
+  {
+    "id": "complaints",
+    "label": "생활불편 민원",
+    "description": "자료준비필요",
+    "category": "체감 보완지표"
+  },
+  {
+    "id": "illegal_parking",
+    "label": "불법주정차 단속",
+    "description": "자료준비필요",
+    "category": "체감 보완지표"
+  }
+]
