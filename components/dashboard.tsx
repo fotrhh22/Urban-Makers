@@ -290,7 +290,7 @@ export default function Dashboard({
           <section className="detail section-wrap">
             <div className="section-heading">
               <div><span className="section-kicker">SPATIAL VIEW</span><h2>지도 및 도시재생활성화지역 목록</h2></div>
-              <p>지도에서 구를 누르면 구 선택이 바뀌고, 목록을 누르면 법정동이 자동 선택됩니다.</p>
+              <p>지도에서 자치구를 선택하거나 목록에서 활성화지역을 선택하세요.</p>
             </div>
             <div className="spatial-grid">
               <SeoulMap
