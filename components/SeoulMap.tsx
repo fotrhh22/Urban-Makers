@@ -145,6 +145,7 @@ export default function SeoulMap({
   const [geojson, setGeojson] = useState<DistrictCollection | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [hoveredDistrict, setHoveredDistrict] = useState<string | null>(null);
+  const [didFitInitialBounds, setDidFitInitialBounds] = useState(false);
 
   useEffect(() => {
     fetch("/data/geo/seoul_gu.geojson")
@@ -169,10 +170,10 @@ export default function SeoulMap({
   const hideDistrictLabels = Boolean(selectedAreaId);
 
   useEffect(() => {
-    if (!map || !isLoaded || !features.length) return;
+    if (!map || !isLoaded || !features.length || didFitInitialBounds) return;
     const allPoints = [
       ...allGeometryPoints(features),
-      ...visibleAreas.map((area) => ({ lat: area.latitude, lng: area.longitude })),
+      ...areas.map((area) => ({ lat: area.latitude, lng: area.longitude })),
     ];
     if (!allPoints.length) return;
 
@@ -184,7 +185,8 @@ export default function SeoulMap({
       return;
     }
     map.fitBounds(bounds, FIT_PADDING);
-  }, [features, isLoaded, map, visibleAreas]);
+    setDidFitInitialBounds(true);
+  }, [areas, didFitInitialBounds, features, isLoaded, map]);
 
   const onLoad = useCallback((instance: google.maps.Map) => setMap(instance), []);
   const onUnmount = useCallback(() => setMap(null), []);
@@ -203,6 +205,7 @@ export default function SeoulMap({
         options={MAP_OPTIONS}
         onLoad={onLoad}
         onUnmount={onUnmount}
+        onClick={() => onDistrictSelect("서울 전체")}
       >
         {features.length ? (
           <PolygonF
@@ -226,7 +229,7 @@ export default function SeoulMap({
               <PolygonF
                 paths={featurePaths(feature)}
                 options={districtOptions(selected, hovered)}
-                onClick={() => onDistrictSelect(name)}
+                onClick={() => onDistrictSelect(selected ? "서울 전체" : name)}
                 onMouseOver={() => setHoveredDistrict(name)}
                 onMouseOut={() => setHoveredDistrict(null)}
               />
